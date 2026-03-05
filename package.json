@@ -1,0 +1,14 @@
+{
+    "name": "limen-monorepo",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "pnpm --parallel -r run dev",
+        "build": "pnpm --parallel -r run build",
+        "lint": "pnpm --parallel -r run lint",
+        "typecheck": "pnpm --parallel -r exec tsc --noEmit"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}

@@ -1,0 +1,44 @@
+# Node & Dependencies
+node_modules/
+.pnpm-store/
+.npm/
+.nvm/
+dist/
+build/
+.env
+.env.local
+.env.production
+.env.development
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# IDE & System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TypeScript
+*.tsbuildinfo
+
+# Vercel
+.vercel/
+
+# Temp / cache
+.tmp/
+.cache/
+coverage/
+.vercel
+
+AGENTS.md
