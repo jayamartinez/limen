@@ -3,6 +3,9 @@ node_modules/
 .pnp
 .pnp.js
 
+# CI / GitHub Actions
+.github/
+
 # Build outputs
 .next/
 dist/
@@ -44,5 +47,3 @@ desktop.ini
 # Vercel
 .vercel
 
-# Large media at repo root (video is served from apps/web/public instead)
-preview.mov
