@@ -56,8 +56,7 @@ app.use((req, res, next) => {
   );
 
   console.log(
-    `[CORS] ${req.method} ${req.originalUrl} from ${origin || "no-origin"} ${
-      isAllowed ? "✅ allowed" : "❌ blocked"
+    `[CORS] ${req.method} ${req.originalUrl} from ${origin || "no-origin"} ${isAllowed ? "✅ allowed" : "❌ blocked"
     }`
   );
 
@@ -75,6 +74,7 @@ app.use("/api/auth/challenge", challengeRouter);
 app.use("/api/history", historyRouter);
 
 // ---- Health check ----
+app.get("/health", (_req, res) => res.send("ok"));
 app.get("/", (_, res) => res.json({ ok: true, msg: "Limen API running" }));
 
 // ---- Start server ----
