@@ -1,8 +1,6 @@
 import express from "express";
 import { config } from "dotenv";
 import analyzeRouter from "./routes/analyze/signal";
-import authRouter from "./routes/auth";
-import challengeRouter from "./routes/auth/challenge";
 import historyRouter from "./routes/history";
 
 config();
@@ -69,8 +67,6 @@ app.use((req, res, next) => {
 
 // ---- ROUTES ----
 app.use("/api/analyze", analyzeRouter);
-app.use("/api/auth", authRouter);
-app.use("/api/auth/challenge", challengeRouter);
 app.use("/api/history", historyRouter);
 
 // ---- Health check ----

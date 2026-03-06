@@ -22,17 +22,14 @@
     "@privy-io/server-auth": "^1.32.5",
     "@supabase/supabase-js": "^2.78.0",
     "ai": "^5.0.83",
-    "bs58": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "tweetnacl": "^1.0.3",
     "x402-solana": "^0.1.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^4.17.21",
-    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^20.11.30",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.5"
